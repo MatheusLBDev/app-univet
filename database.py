@@ -11,6 +11,8 @@ SQLALCHEMY_DATABASE_URL = os.getenv(
     "postgresql://user:password@host:port/database"  
 )
 
+print("Conectando no banco:", SQLALCHEMY_DATABASE_URL)
+
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
     connect_args={"sslmode": "require"}  
