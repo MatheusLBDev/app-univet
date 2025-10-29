@@ -8,7 +8,7 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-origins = ["http://localhost:3000", "http://localhost:5173", "https://app-univet.onrender.com"]
+origins = ["http://localhost:3000", "http://localhost:5173", "https://front-univet-wnka.vercel.app", "https://front-univet-wnka-git-main-matheus-limas-projects-90388d72.vercel.app", "https://front-univet-wnka-ty9tz30cx-matheus-limas-projects-90388d72.vercel.app"]
 
 app.add_middleware(
     CORSMiddleware,
