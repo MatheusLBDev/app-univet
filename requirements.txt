@@ -6,3 +6,4 @@ python-multipart
 pandas
 statsmodels
 psycopg2-binary
+python-dotenv
