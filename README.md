@@ -87,3 +87,5 @@ O endpoint de previsão está implementado em `backend/routers/forecast.py`
 - statsmodels
 - psycopg2-binary
 - python-dotenv
+
+**Obs:** segue o link para etapas da execução do frontend: https://github.com/MatheusLBDev/front-univet/edit/main/README.md
