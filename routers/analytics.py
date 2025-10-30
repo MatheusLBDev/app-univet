@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from models import Product, Sale, SaleItem, Client, Pet
 from database import SessionLocal
 
-router = APIRouter()
+router = APIRouter(tags=["Analytics"])
 
 def get_db():
     db = SessionLocal()
