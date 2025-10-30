@@ -2,7 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine
 import models
-from routers import appointments, clients_pets, inventory, forecast
+from routers import appointments, clients_pets, inventory, forecast, analytics
+
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -22,3 +23,5 @@ app.include_router(appointments.router)
 app.include_router(clients_pets.router)
 app.include_router(inventory.router)
 app.include_router(forecast.router)
+app.include_router(analytics.router)
+
