@@ -23,5 +23,5 @@ app.include_router(appointments.router)
 app.include_router(clients_pets.router)
 app.include_router(inventory.router)
 app.include_router(forecast.router)
-app.include_router(analytics.router)
+
 
